@@ -51,17 +51,17 @@ public class Game {
         JDialog.setDefaultLookAndFeelDecorated(true);
         Object[] selectionValues = { 1, 2, 3 };
         int initialSelection = 0;
-        Object selection = JOptionPane.showInputDialog(null, "Z iloma komputerami chcesz zagrać?",
-                "Liczba graczy", JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
+        Object selection = JOptionPane.showInputDialog(null, "Select the number of players",
+                "Players", JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
         return (int)selection;
     }
 
     private void initPlayers(){
-        players.add(new Human("Gracz"));
+        players.add(new Human("Player"));
 
         for(int i = 1; i <= playersNumber; i++)
         {
-            players.add(new Computer("Komputer " + i) {
+            players.add(new Computer("Computer " + i) {
             });
         }
     }

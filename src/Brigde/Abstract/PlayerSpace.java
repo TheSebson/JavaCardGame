@@ -37,7 +37,7 @@ public abstract class PlayerSpace extends JPanel{
         try {
             image = ImageIO.read(this.getClass().getResource("images/"+ name + ".gif" ));
         } catch (IOException ex) {
-            System.out.println("Problem z img karty" + name);
+            System.out.println("Card image doesn't load" + name);
         }
         return image;
     }

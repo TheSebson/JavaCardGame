@@ -10,7 +10,7 @@ public class MainFrame extends JFrame {
     private static MainFrame mainFrame;
 
     private MainFrame(){
-        super("Oczko");
+        super("Twenty-One");
         setLayout(new BorderLayout());
 
 //        setExtendedState(JFrame.MAXIMIZED_BOTH);

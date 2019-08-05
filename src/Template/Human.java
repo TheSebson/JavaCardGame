@@ -10,16 +10,16 @@ public class Human extends Player {
 
     public Human(String playerID) {
         super(playerID);
-        this.playerSpace = new HumanFields("Twoje karty");
+        this.playerSpace = new HumanFields("Your cards");
     }
 
 
     @Override
     protected boolean decision() {
 
-        Object[] options = {"Tak", "Nie"};
+        Object[] options = {"Yes", "No"};
         int n = JOptionPane.showOptionDialog(null,
-                "Czy chcesz dobrać kartę?",
+                "Do you want to pick a card?",
                 null,
                 JOptionPane.YES_NO_OPTION,
                 JOptionPane.QUESTION_MESSAGE,

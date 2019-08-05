@@ -33,8 +33,8 @@ public class GameOver implements Stage {
                     winners.add(player.toString());
                 } else if (((Player)player).getScore() == highScore) winners.add(player.toString());
             }
-            if(winners.size() > 1) endGame("Remis - " + winners );
-            else if(bestPlayer.equals("")) endGame("Nikt nie wygrał :( ");
+            if(winners.size() > 1) endGame("Draw - " + winners );
+            else if(bestPlayer.equals("")) endGame("Nobody won");
             else endGame(bestPlayer);
     }
 

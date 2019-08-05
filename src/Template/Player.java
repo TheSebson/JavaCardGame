@@ -33,7 +33,6 @@ public abstract class Player {
             } else status = false;
 
             if(score == 21){
-//                System.out.println(playerID + " wygrywa!");
                 status = false;
                 return false;
             } else if(score > 21) status = false;
@@ -69,7 +68,7 @@ public abstract class Player {
 
     @Override
     public String toString() {
-        return playerID + " wygrywa z wynikiem " + score;
+        return playerID + " wins with the result " + score;
     }
 
 
